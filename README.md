@@ -94,6 +94,13 @@ This skill stands on three sets of ideas:
 - **[Ralph Wiggum](https://ghuntley.com/ralph/)** — Geoffrey Huntley's technique of running agents in a loop with a **fresh context every iteration**, keeping state in files rather than in a growing conversation. It inspired this skill's core mechanic: fresh amigos every round, with compact minutes as the only state that travels — no context rot, near-flat token cost.
 - **Prompting best practices** — [Anthropic's prompting guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices), the [Prompting Guide](https://www.promptingguide.ai/techniques), and [MIT Sloan's effective prompts](https://mitsloanedtech.mit.edu/ai/basics/effective-prompts/). Distilled into the Architect's operating principles, and applied to the authoring of the skill itself.
 
+## About the author
+
+I'm [Alexander Botero](https://github.com/alexanderbotero). This skill is built on the idea that holding your position until the argument is good enough is a feature, not friction — a theme I explore at length in my book **Tenacidad**:
+
+- :gb: [Tenacity: Silent strength, unbreakable power](https://www.amazon.com/dp/9083578127)
+- :es: [Tenacidad: Fuerza silenciosa, poder inquebrantable](https://www.amazon.com/dp/9083578100)
+
 ## License
 
 [MIT](LICENSE)
