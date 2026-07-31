@@ -106,7 +106,7 @@ This skill stands on three sets of ideas:
 
 ## About the author
 
-I'm [Alexander Botero](https://github.com/alexanderbotero). This skill is built on the idea that holding your position until the argument is good enough is a feature, not friction — a theme I explore at length in my book **Tenacidad**:
+I'm [Alexander Botero](https://github.com/alexanderbotero). Away from the terminal I write about Stoicism — **Tenacidad**.
 
 - :gb: [Tenacity: Silent strength, unbreakable power](https://www.amazon.com/dp/9083578127)
 - :es: [Tenacidad: Fuerza silenciosa, poder inquebrantable](https://www.amazon.com/dp/9083578100)
