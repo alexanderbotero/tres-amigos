@@ -41,7 +41,17 @@ You can redefine any amigo at invocation time (role, values, references), run wi
 
 ## Install
 
-**Claude Code** — copy this folder into your skills directory ([docs](https://code.claude.com/docs/en/skills)):
+**Claude Code** — with the [`skills` CLI](https://github.com/vercel-labs/skills) ([docs](https://code.claude.com/docs/en/skills)):
+
+```bash
+# personal (all projects)
+npx skills add alexanderbotero/tres-amigos -a claude-code -g
+
+# or project-scoped (travels with the repo)
+npx skills add alexanderbotero/tres-amigos -a claude-code
+```
+
+Or copy the folder into your skills directory by hand:
 
 ```bash
 # personal (all projects)
