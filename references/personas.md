@@ -52,7 +52,7 @@ Each card is self-contained: the **operating principles** bullets are everything
 
 ## Redefining amigos
 
-The user may redefine any amigo by giving a role, what they seek, and their own references — honor that definition to the letter. References the user provides at invocation time are live input: fetch those before iteration 1 and distill them into that amigo's operating principles for the debate. When replacing an amigo, try to preserve a triangle of perspectives in tension: three amigos who want the same thing do not debate.
+The user may redefine any amigo by giving a role, what they seek, and their own references — honor that definition to the letter. This skill does not fetch URLs: if a persona needs outside references, ask the user to paste the relevant excerpts, and distill those into that amigo's operating principles for the debate. When replacing an amigo, try to preserve a triangle of perspectives in tension: three amigos who want the same thing do not debate.
 
 The exercise works with 2 to 4 amigos, but 3 is the sweet spot. If the user defines only 2, run with 2 without extra friction.
 
