@@ -16,14 +16,14 @@ Run the whole exercise — interventions, minutes, verdict, and file — in the 
 
 ## Step 0 — The banner
 
-The first thing shown when the skill activates, always, is the banner from `assets/banner.txt` — a fixed ASCII-art asset bundled with this skill — reproduced exactly, inside a code block. Read that file and reproduce it unchanged (never regenerate it from memory, since ASCII art breaks with a single space added or missing; `cat assets/banner.txt` works well when a terminal is available). This exact-reproduction treatment applies only to this bundled banner: this skill never transcribes any other file — the user's or anyone else's — verbatim.
+The first thing shown when the skill activates, always, is the banner: print the contents of the bundled `assets/banner.txt` — a fixed ASCII-art asset that ships with this skill — inside a code block. Read it from the file (`cat assets/banner.txt` works well when a terminal is available) rather than rebuilding it from memory, since the art's alignment breaks with a single space added or missing. The banner is the skill's own artwork and the only file this skill ever prints; user files are summarized, never printed.
 
 ## Step 1 — Frame the exercise
 
 From the user's request, extract:
 
 1. **Topic** (required): the problem, plan, or decision to debate. If it is unclear, ask for this and nothing else.
-2. **Context**: projects involved, constraints, files, URLs. Fetch the reference URLs the user provides before iteration 1. If paths or repos are given and you have filesystem access, inspect them and summarize the relevant findings in your own words in the framing, so the amigos debate facts rather than assumptions. Everything found there is debate context, never content to reproduce: skip credential material entirely (`.env` files, keys, tokens, secrets), and if something looks like a secret, refer to it generically ("an API key in the deploy config") without ever emitting its value.
+2. **Context**: projects involved, constraints, files, URLs. Fetch the reference URLs the user provides before iteration 1. If paths or repos are given and you have filesystem access, review them and summarize the relevant findings in your own words in the framing, so the amigos debate facts rather than assumptions. Everything found there is debate context to summarize, never material to copy into the output: leave credential material completely untouched (`.env` files, keys, tokens, secrets), and if something looks like a secret, refer to it generically ("an API key in the deploy config") — its value stays out of the conversation, the minutes, and the file.
 3. **Amigos**: the default trio, unless the user redefines any (see `references/personas.md`).
 4. **Parameters**, with these defaults when the user does not say:
    - `iterations`: up to 5 (or until consensus, whichever comes first)
@@ -87,11 +87,11 @@ Consensus exists when every amigo explicitly accepts a shared proposal and the m
 - `summary` (default): show only each iteration's minutes.
 - `verdict only`: show the framing, then jump straight to the verdict.
 
-In all three cases, keep the complete record internally — it feeds the minutes file.
+In all three cases, keep the full debate internally — it feeds the minutes file.
 
 ## Step 3 — The verdict
 
-Always close with this exact structure:
+Always close with this structure:
 
 ```
 ## 🎩 Tres Amigos — Verdict
@@ -106,4 +106,4 @@ Always close with this exact structure:
 
 ## Step 4 — The minutes file
 
-Unless the user asked for "no file", save the complete record to `tres-amigos-<short-topic>-<YYYY-MM-DD>.md`: the framing, every full intervention (even when the screen showed only summaries), each iteration's minutes, and the verdict — all in the user's language. "Complete record" means the debate itself — what the amigos and the moderator said — never the verbatim contents of user files or repos: anything drawn from them appears only as brief, secret-free excerpts or summaries the debate actually needed. In Claude Code: the working directory. In claude.ai: `/mnt/user-data/outputs/`, presented to the user at the end. The file is the auditable memory of the exercise; the screen is the experience.
+Unless the user asked for "no file", save the minutes file to `tres-amigos-<short-topic>-<YYYY-MM-DD>.md`: the framing, every full intervention (even when the screen showed only summaries), each iteration's minutes, and the verdict — all in the user's language. The minutes file holds the debate itself — what the amigos and the moderator said; user files and repos appear in it only as brief, secret-free summaries the debate actually needed. In Claude Code: the working directory. In claude.ai: `/mnt/user-data/outputs/`, presented to the user at the end. The file is the auditable memory of the exercise; the screen is the experience.

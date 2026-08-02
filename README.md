@@ -23,7 +23,7 @@ Agents debating each other tend to agree out of politeness, and a debate that co
 
 ## How it works
 
-1. **Banner** — the three sombreros, always. Reproduced byte for byte from `assets/banner.txt`.
+1. **Banner** — the three sombreros, always, printed from `assets/banner.txt`.
 2. **Framing** — topic, context, amigos, and parameters extracted from your request.
 3. **The debate loop** — each iteration, every amigo (fresh) receives their persona card plus the minutes, answers the strongest arguments against them, concedes what they must, and pushes a shared proposal forward. The moderator updates the minutes, checks for consensus, and poses the crux question if a round stalls.
 4. **The verdict** — executive summary, points of consensus, unresolved disagreements, moderator's analysis, recommendation, next steps.
@@ -91,7 +91,7 @@ Parameters (all optional, stated in plain language in your request):
 tres-amigos/
 ├── SKILL.md              # the exercise: workflow, debate rules, output templates
 ├── assets/
-│   └── banner.txt        # the three sombreros, printed verbatim on activation
+│   └── banner.txt        # the three sombreros, printed on activation
 └── references/
     └── personas.md       # default persona cards + how to redefine them
 ```
